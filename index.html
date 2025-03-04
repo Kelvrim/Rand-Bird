@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rand-Bird</title>
+        <link href="styles/style.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1>Rand-Bird</h1>
+        <p>A very simple deck simulation to familiarize myself with APIs</p>
+        <p>This is only meant to be a proof of concept for integrating APIs, not to be nicely designed.</p>
+        <div class="mainContainer" id="mainContainer">
+
+            <!-- bird card display -->
+            <div class="birdCard" id="birdCard">
+                <img src="images\defaultBird.png" />
+                <div class="birdName" id="birdName"></div>
+                <div class="birdDetails" id="birdDetails"></div>
+            </div>
+
+            <!-- Give me a bird! button -->
+            <div class="buttonSection" id="buttonSection">
+                <button id="pullRandBird" onClick="pullOneCardFromDeck()">Give me a bird!</button>
+            </div>
+            
+        </div>
+
+        <!-- link to script-->
+        <script src="script.js"></script>
+    </body>
+</html>
